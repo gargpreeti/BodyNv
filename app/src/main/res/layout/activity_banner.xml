@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner_background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#a9a9a9">
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Bodynv.tv"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_btm"
+        android:layout_below="@+id/rel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            ></LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:id="@+id/tv"
+            android:text="The #1 Best "
+            android:textColor="#8acdea"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:text="25 Minute "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:text="Gym Workout Program "
+                android:textColor="#8acdea"
+                android:textSize="20dp"
+                android:layout_below="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linr"
+            android:layout_below="@+id/rel_tagline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:id="@+id/tv1"
+            android:text="What's in it for me? "
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_slider"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv1"
+            android:background="@mipmap/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:id="@+id/tv2"
+            android:text="Weekly Workout Schedule"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv1"
+           android:layout_toRightOf="@+id/img_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:id="@+id/tv3"
+            android:text="5 workouts per week"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/img_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.zoptal.bodynv.common.MyTextView
+            android:id="@+id/tv4"
+            android:text="(how to's included)"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tv3"
+            android:layout_toRightOf="@+id/img_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/img_timer"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv4"
+            android:background="@mipmap/timer_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:id="@+id/tv5"
+            android:text="25 minutes or less"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv4"
+            android:layout_toRightOf="@+id/img_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:id="@+id/tv6"
+            android:text="(stop clock included)"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tv5"
+            android:layout_toRightOf="@+id/img_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_upgrade"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/upgrade"/>
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:id="@+id/tv_browsefree"
+            android:text="or browse for free"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/btn_upgrade"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btm"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#a9a9a9"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/home" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/timerdisable" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/backdisable" />
+    </RelativeLayout>
+
+</RelativeLayout>

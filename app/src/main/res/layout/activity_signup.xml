@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@mipmap/backimg"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+       android:id="@+id/rel_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/strip">
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:text="Bodynv.tv"
+            android:textColor="#F1F1F1"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/img_bck"
+            android:layout_width="100dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/backarrow"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.zoptal.bodynv.common.InteractiveScrollView
+        android:layout_below="@+id/rel_head"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+          >
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                   android:layout_marginTop="5dp"
+                android:background="@mipmap/filed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zoptal.bodynv.common.EditTextView
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"
+                  android:layout_centerVertical="true"
+                    android:textCursorDrawable="@drawable/whitecursor"
+                    />
+
+            </RelativeLayout>
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:text="Password"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/filed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zoptal.bodynv.common.EditTextView
+                    android:id="@+id/ed_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:textCursorDrawable="@drawable/whitecursor"
+                    />
+  </RelativeLayout>
+
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:text="E-mail address"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/filed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zoptal.bodynv.common.EditTextView
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:textCursorDrawable="@drawable/whitecursor"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+android:visibility="gone"
+            android:text="Choose your Payment Method"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+   <ImageView
+android:visibility="gone"
+       android:id="@+id/img_disablecreditcard"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="@mipmap/disable"/>
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:visibility="gone"
+                android:text="Credit Card"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:visibility="gone"
+             android:layout_toLeftOf="@+id/tv_paypal"
+                android:id="@+id/img_disablepaypal"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/disable"/>
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:visibility="gone"
+                android:id="@+id/tv_paypal"
+                android:layout_alignParentRight="true"
+                android:text="PayPal"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginRight="20dp"
+               android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="@mipmap/signup"/>
+        <!--<RelativeLayout-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_login"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/login"/>-->
+
+            <!--<com.zoptal.bodynv.common.MyTextView-->
+                <!--android:text="Not a member yet?"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="10dp"-->
+                <!--android:layout_marginTop="35dp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:layout_toRightOf="@+id/btn_login"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        <!--<Button-->
+            <!--android:layout_toRightOf="@+id/btn_login"-->
+            <!--android:id="@+id/btn_joinus"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/joinus"/>-->
+        <!--</RelativeLayout>-->
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:text="The #1 Best 25 Minute Gym Workout Program"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginTop="60dp"
+           android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="30dp"
+            ></LinearLayout>
+        </LinearLayout>
+    </com.zoptal.bodynv.common.InteractiveScrollView>
+</LinearLayout>

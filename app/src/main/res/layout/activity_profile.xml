@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@mipmap/backimg"
+   >
+
+    <RelativeLayout
+android:id="@+id/rel_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/strip">
+        <RelativeLayout
+            android:id="@+id/img_bck"
+            android:layout_width="100dp"
+            android:layout_height="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backarrow"/>
+        </RelativeLayout>
+        <com.zoptal.bodynv.common.MyTextView
+            android:text="Bodynv.tv"
+            android:textColor="#F1F1F1"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:id="@+id/tv_logout"
+            android:text="Logout"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <com.zoptal.bodynv.common.InteractiveScrollView
+        android:layout_below="@+id/rel_head"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:text="My Profile"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/circle"
+               android:layout_gravity="center_horizontal"
+                />
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:layout_marginTop="15dp"
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                   android:layout_marginTop="5dp"
+                android:background="@mipmap/filed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zoptal.bodynv.common.EditTextView
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"
+                  android:layout_centerVertical="true"
+                    android:textCursorDrawable="@drawable/whitecursor"
+                    />
+
+            </RelativeLayout>
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:text="Email"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/filed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zoptal.bodynv.common.EditTextView
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:textCursorDrawable="@drawable/whitecursor"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_chngepw"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:textColor="#ffffff"
+            android:text="Change Password"
+            android:layout_height="45dp"
+            android:background="@mipmap/filed"/>
+
+
+        <Button
+            android:layout_toRightOf="@+id/btn_chngepw"
+            android:id="@+id/btn_save"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="130dp"
+            android:textColor="#ffffff"
+            android:text="Save"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/filed"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/rel_member"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:id="@+id/tv_membr"
+                android:text="Membership Plan:-"
+                android:textColor="#ffffff"
+                android:textSize="19dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.zoptal.bodynv.common.MyTextView
+                android:id="@+id/tv_plan"
+                android:text="BODYNV Subscription -"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                <com.zoptal.bodynv.common.MyTextView
+                    android:id="@+id/tv_paid"
+                    android:layout_toRightOf="@+id/tv_plan"
+                    android:text="$0.01"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:id="@+id/tv_cncl"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Cancel Membership"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/tv_upgrade"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:background="@mipmap/upgrade"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:text="The #1 Best 25 Minute Gym Workout Program"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+                      android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="30dp"
+            ></LinearLayout>
+        </LinearLayout>
+    </com.zoptal.bodynv.common.InteractiveScrollView>
+</RelativeLayout>

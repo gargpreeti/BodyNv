@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_texture"
+
+    >
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:background="#ffffff"
+        android:layout_marginRight="20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:background="#EC3030"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true">
+
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Payment Method"
+                android:textSize="18dp"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="50dp"
+            android:background="#a9a9a9"
+            android:layout_below="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_disablecreditcard"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/disable"/>
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:text="Credit Card"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/tv_paypal"
+                android:id="@+id/img_disablepaypal"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/disable"/>
+            <com.zoptal.bodynv.common.MyTextViewbold
+                android:id="@+id/tv_paypal"
+                android:layout_alignParentRight="true"
+                android:text="PayPal"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btn_cncl"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:background="#ECF0F1"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cancel"/>
+
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="#383030"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Confirm"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

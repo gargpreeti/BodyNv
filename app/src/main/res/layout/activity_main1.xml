@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res/com.carouseldemo.main"
+    xmlns:bm="com.carouseldemo.main"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="text"
+        android:id="@+id/selected_item"
+        android:background="#1E1921"
+        android:textColor="#A85E4F"
+        android:textStyle="normal"
+        />
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:padding="50dip"
+              android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#808080"
+        >
+
+        <!--
+                 如果没设置items和names，则需要设置setCarouselAdapter
+            pj:Items="@array/entries"
+            pj:Names="@array/names"  -->
+        <com.zoptal.bodynv.controls.Carousel
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/carousel"
+                      android:animationDuration="200"
+            />
+    </LinearLayout>
+</LinearLayout>
+

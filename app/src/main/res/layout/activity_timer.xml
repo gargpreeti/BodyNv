@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_texture"
+   >
+    <RelativeLayout
+android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/strip">
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:text="Bodynv.tv"
+            android:textColor="#F1F1F1"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+<LinearLayout
+
+    android:id="@+id/linr"
+    android:orientation="vertical"
+    android:layout_marginBottom="100dp"
+    android:layout_below="@+id/rel"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.youtube.player.YouTubeThumbnailView
+            android:id="@+id/youtube_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_yt_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/youtube_play"
+            android:background="#00000000"
+            />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/rel_timerbck"
+    android:layout_weight="1"
+    android:background="@drawable/back_texture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zoptal.bodynv.common.MyTextView
+        android:id="@+id/tv"
+        android:text="Start Now !"
+        android:textColor="#ffffff"
+        android:textSize="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+      android:layout_above="@+id/tv_timer"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.zoptal.bodynv.common.MyTextViewbold
+        android:visibility="gone"
+        android:id="@+id/tv_msg"
+        android:text="Pay the Piper"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Chronometer
+        android:id="@+id/tv_timer"
+        android:layout_marginBottom="30dp"
+        android:text="00:00:00"
+        android:textColor="#ffffff"
+        android:textSize="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+</LinearLayout>
+    <RelativeLayout
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:background="#a9a9a9">
+
+      <ImageView
+          android:id="@+id/img_home"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="20dp"
+          android:background="@mipmap/home"/>
+
+      <ImageView
+          android:id="@+id/img_timer"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginLeft="20dp"
+          android:background="@mipmap/timer"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_timer_pause"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/red"/>
+
+        <com.zoptal.bodynv.common.MyTextViewbold
+            android:visibility="gone"
+          android:id="@+id/img_reset"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+           android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          android:text="RESET"/>
+
+        <ImageView
+            android:id="@+id/img_bck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/back"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

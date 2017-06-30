@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="test"
+            type="Byte" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        >
+
+        <ImageView
+            android:id="@+id/c_item_1"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            />
+
+        <com.zoptal.bodynv.common.MyTextView
+            android:id="@+id/textview_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:text=""
+            android:paddingRight="10dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="#696969"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</layout>
